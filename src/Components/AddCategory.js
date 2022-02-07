@@ -12,7 +12,7 @@ const AddCategory=({setCategories})=>{
     const handleSubmit=(e)=>{
         e.preventDefault();
         if(inputValue.trim().length>1){
-            setCategories(cates=>[inputValue, ...cates])
+            setCategories(cates=>[inputValue])
         }else{
             alert('Debe ingresar una categoría')
         }
@@ -24,9 +24,9 @@ const AddCategory=({setCategories})=>{
 
     return(
     
-        <form onSubmit={handleSubmit} className='search-container'> 
-            <div className='form-control'>
-            <input type="text" placeholder='Ingrese categoría'  value={inputValue} onChange={handleInputChange}
+        <form onSubmit={handleSubmit} className='search__container'> 
+            <div className='form__control'>
+            <input type="text" placeholder='Buscar tema...'  value={inputValue} onChange={handleInputChange}
             ></input>
 
 

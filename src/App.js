@@ -1,5 +1,7 @@
 import GifExpertApp from "./Components/GifExpertApp";
-import './index.css'
+
+
+import 'animate.css';
 function App() {
   return (
     <div className="App">

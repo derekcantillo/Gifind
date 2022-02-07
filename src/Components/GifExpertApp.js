@@ -15,7 +15,7 @@ const GifExpertApp=()=>{
     return(
         <>
         
-        <h1>GifApp</h1>
+        <h1 className='animate__animated animate__rubberBand'>Gifind</h1>
         <hr/>
         <AddCategory setCategories={setCategories}/>
         
